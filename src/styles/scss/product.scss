@@ -1,0 +1,12 @@
+.product{
+  &__photo{
+    width: 100%;
+    display: block;
+
+    &:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+
+    }
+  }
+}

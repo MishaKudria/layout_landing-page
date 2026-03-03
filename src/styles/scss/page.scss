@@ -1,0 +1,30 @@
+.page {
+  font-family: Manrope, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  line-height: 140%;
+  color: $main-color;
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+  }
+
+  &__menu {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity $effectDuration;
+  }
+
+  &__menu:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
