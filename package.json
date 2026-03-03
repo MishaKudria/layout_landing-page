@@ -700,5 +700,8 @@
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/mate-academy/layout_landing-page/issues"
+  },
+  "optionalDependencies": {
+    "lightningcss-linux-x64-gnu": "^1.31.1"
   }
 }
