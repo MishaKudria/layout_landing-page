@@ -1,12 +1,13 @@
-
 .contact-us {
   &__link {
     display: block;
+
     margin-bottom: 40px;
-    text-align: center;
-    color: $main-color;
-    text-decoration: underline;
+
     font-size: 18px;
+    color: $main-color;
+    text-align: center;
+    text-decoration: underline;
   }
 }
 
@@ -14,15 +15,18 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+
   max-width: 500px;
   margin: 0 auto;
 
   &__input {
+    padding: 12px 0;
     border: none;
     border-bottom: 1px solid #ccc;
-    padding: 12px 0;
+
     font-family: inherit;
     font-size: 16px;
+
     background: transparent;
     outline: none;
 
@@ -32,15 +36,18 @@
   }
 
   &__button {
+    cursor: pointer;
+
     margin-top: 16px;
     padding: 16px;
-    background-color: $main-color;
-    color: #fff;
     border: none;
-    text-transform: uppercase;
+
     font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
     letter-spacing: 1px;
-    cursor: pointer;
+
+    background-color: $main-color;
 
     &:hover {
       background-color: ($main-color, 10%);

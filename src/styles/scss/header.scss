@@ -1,30 +1,33 @@
 .header {
-  height: 100vh;
   display: flex;
   flex-direction: column;
+
+  height: 100vh;
+
   background-image: url(../../images/header-bg-mobile.png.png);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+
     box-sizing: border-box;
-    
-    @include constent-padding-in-line;
+    height: 100%;
+
+    @include content-padding-in-line;
   }
 
   &__bottom {
-    text-align: left;
     padding-bottom: 80px;
+    text-align: left;
   }
 
   &__title {
     margin: 0;
-    color: #fff;
     font-size: 36px;
     line-height: 1.1;
+    color: #fff;
   }
 }

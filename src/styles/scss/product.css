@@ -1,0 +1,10 @@
+.product__photo {
+  display: inline-block;
+  width: 100%;
+}
+
+.product__photo:hover {
+  transform: scale(1.05);
+  /* stylelint-disable-next-line order/properties-order */
+  cursor: pointer;
+}

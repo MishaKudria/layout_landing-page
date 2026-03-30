@@ -1,16 +1,19 @@
 .icon {
   display: inline-block;
-  height: 24px;
-  width: 24px;
 
+  width: 24px;
+  height: 24px;
+
+  // margin-right: auto;
 
   background-repeat: no-repeat;
-  background-position: center;
+
+  // background-position: center;
   background-size: contain;
 
-  @include on-Tablet {
-    height: 32px;
+  @include on-tablet {
     width: 32px;
+    height: 32px;
   }
 
   &--phone {
@@ -22,13 +25,12 @@
   }
 
   &--close {
+    margin-right: 40px;
     background-image: url(../../images/icon/icon-close.png);
   }
-
-    &__icon--close:target {
+  &__icon--close:target {
+    pointer-events: auto;
     visibility: visible;
     opacity: 1;
-    pointer-events: auto;
   }
-
 }

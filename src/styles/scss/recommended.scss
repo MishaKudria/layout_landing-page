@@ -1,13 +1,12 @@
 .recommended {
-    &__products {
-      display: grid;
-      grid-template-columns: 1fr;
-      row-gap: 40px;
+  &__products {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
 
-      @include on-Desktop {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 24px;
-      }
+    @include on-desktop {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
     }
   }
-
+}

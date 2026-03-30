@@ -1,13 +1,15 @@
 .menu {
-  height: 100vh;
   box-sizing: border-box;
-  background-color: #f9f9f9;
+  height: 100vh;
+
   font-weight: 700;
   text-transform: uppercase;
 
+  background-color: #f9f9f9;
+
   &__nav_list {
-    margin-bottom: 48px;
     gap: 38px;
+    margin-bottom: 48px;
   }
 
   &__top {
@@ -15,31 +17,37 @@
   }
 
   &__content {
-    @include content-Padding-In-line;
+    @include content-padding-in-line;
   }
 
   &__phone-number {
     display: block;
+
     margin-bottom: 16px;
-    color: #1B2129;
-    text-decoration: none;
+    margin-left: 72px;
+
     font-size: 16px;
     line-height: 140%;
+    color: #1b2129;
+    text-decoration: none;
     letter-spacing: 2px;
-    margin-left: 72px;
   }
 
   &__call-to-order {
     display: block;
+
     width: fit-content;
+    margin-left: 72px;
     padding-bottom: 4px;
     border-bottom: 1px solid #1b2129;
-    color: #1B2129;
-    text-decoration: none;
+
     font-size: 16px;
     line-height: 140%;
+    color: #1b2129;
+    text-decoration: none;
     letter-spacing: 2px;
-    margin-left: 72px;
+  }
+  &--logo__menu {
+    margin-right: 20px;
   }
 }
-

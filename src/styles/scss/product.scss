@@ -1,12 +1,13 @@
-.product{
-  &__photo{
+.product {
+  &__photo {
+    display: inline-block;
     width: 100%;
-    display: block;
 
-    &:hover{
-      transform: scale(1.05);
+    // display: block;
+
+    &:hover {
       cursor: pointer;
-
+      transform: scale(1.05);
     }
   }
 }
