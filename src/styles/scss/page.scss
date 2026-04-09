@@ -26,8 +26,6 @@
     transition: opacity $effectDuration;
   }
 
-  
-
   &__menu:target {
     pointer-events: auto;
     visibility: visible;

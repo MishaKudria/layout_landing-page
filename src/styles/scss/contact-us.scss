@@ -1,4 +1,3 @@
-
 .contact-us {
   padding: 80px 0;
   font-family: Arial, sans-serif; /* Или твой основной шрифт */
@@ -11,62 +10,68 @@
 }
 
 .section-title {
+  margin-bottom: 60px;
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 60px;
-  color: #1B2129;
+  color: #1b2129;
 }
 
 /* Сетка: форма слева, контакты справа */
 .contact-content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   gap: 100px; /* Расстояние между колонками */
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 /* Стили формы */
 .form {
-  flex: 1; /* Занимает всё свободное место слева */
   display: flex;
+  flex: 1; /* Занимает всё свободное место слева */
   flex-direction: column;
   max-width: 550px;
 }
 
 .form__input {
+  box-sizing: border-box;
   width: 100%;
-  padding: 18px 20px;
   margin-bottom: 20px;
+  padding: 18px 20px;
   border: none;
-  background-color: #F7F8FA; /* Светло-серый фон как на фото */
+  border-radius: 4px;
+
   font-size: 16px;
   color: #292929;
-  border-radius: 4px;
+
+  background-color: #f7f8fa; /* Светло-серый фон как на фото */
   outline: none;
-  box-sizing: border-box;
 }
 
 .form__input::placeholder {
-  color: #A0A0A0;
+  color: #a0a0a0;
 }
 
 .form__input--textarea {
-  min-height: 150px; /* Делаем поле сообщения выше */
   resize: none;
+  min-height: 150px; /* Делаем поле сообщения выше */
 }
 
 .form__button {
   cursor: pointer;
+
+  margin-top: 10px;
   padding: 18px;
-  background-color: #1B2129;
-  color: #fff;
   border: none;
   border-radius: 8px;
+
   font-size: 16px;
   font-weight: 700;
+  color: #fff;
   letter-spacing: 0.5px;
+
+  background-color: #1b2129;
+
   transition: background 0.3s ease;
-  margin-top: 10px;
 }
 
 .form__button:hover {
@@ -83,17 +88,17 @@
 }
 
 .example__title {
-  font-size: 14px;
-  color: #9393A3;
   margin-bottom: 8px;
+  font-size: 14px;
   font-weight: normal;
+  color: #9393a3;
 }
 
 .example__value {
+  margin: 0;
   font-size: 18px;
   line-height: 1.5;
   color: #292929;
-  margin: 0;
 }
 
 /* Адаптив для мобилок */
@@ -102,8 +107,9 @@
     flex-direction: column;
     gap: 50px;
   }
-  .form, .example {
-    max-width: 100%;
+  .form,
+  .example {
     flex: none;
+    max-width: 100%;
   }
 }

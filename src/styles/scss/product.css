@@ -1,9 +1,0 @@
-.product__photo {
-  display: inline-block;
-  width: 100%;
-}
-
-.product__photo:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-}/*# sourceMappingURL=product.css.map */

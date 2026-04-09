@@ -1,22 +1,27 @@
 .view {
   display: flex;
   justify-content: flex-start;
-  padding-left: 120px;
+
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 120px;
 
   &__link {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
     width: 324px;
     height: 56px;
-    background-color: #F98921;
-    color: #ffffff;
+    border-radius: 4px;
+
     font-size: 16px;
     font-weight: 700;
+    color: #fff;
     text-decoration: none;
-    border-radius: 4px;
+
+    background-color: #f98921;
+
     transition: opacity 0.3s ease;
 
     &:hover {
@@ -27,8 +32,8 @@
 
 @media (max-width: 768px) {
   .view {
-    padding-left: 20px;
     justify-content: center;
+    padding-left: 20px;
   }
 
   .view__link {

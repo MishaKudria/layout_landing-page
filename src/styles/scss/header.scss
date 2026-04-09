@@ -9,21 +9,20 @@
   background-image: url(../../images/header-bg-mobile.png.png);
   background-size: cover;
 
-   &__content {
+  &__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: stretch;
+    justify-content: space-between;
 
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
 
-
-    box-sizing: border-box;
     @include content-padding-in-line;
 
-    @include on-desktop  {
-      padding-inline: 120px; ;
+    @include on-desktop {
+      padding-inline: 120px;
     }
 
     @include on-tablet {
@@ -33,25 +32,22 @@
 
   &__title {
     margin-top: 32px;
-
     font-size: 32px;
     line-height: 120%;
-    color: #f9f9f9;;
+    color: #f9f9f9;
 
     @include on-tablet {
-      font-size: 48px;
       margin-top: 64px;
+      font-size: 48px;
     }
 
     @include on-desktop {
-      font-size: 64px;
       margin-top: 128px;
+      font-size: 64px;
     }
-}
+  }
 
-
-.bose__logo_image {
-  height: 80px;
+  .bose__logo_image {
+    height: 80px;
+  }
 }
-}
-
