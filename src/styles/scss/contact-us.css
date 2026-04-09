@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 .contact-us {
   padding: 80px 0;
   font-family: Arial, sans-serif; /* Или твой основной шрифт */
@@ -44,6 +44,10 @@
   border-radius: 4px;
   outline: none;
   box-sizing: border-box;
+}
+
+.form__input::-moz-placeholder {
+  color: #A0A0A0;
 }
 
 .form__input::placeholder {
@@ -106,4 +110,4 @@
     max-width: 100%;
     flex: none;
   }
-}
+}/*# sourceMappingURL=contact-us.css.map */
