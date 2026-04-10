@@ -1,31 +1,27 @@
-@mixin on-tablet {
-  @media (min-width: $tablet-min-width) {
+@mixin respond($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
     @content;
   }
 }
 
-@mixin on-desktop {
-  @media (min-width: $desktop-min-width) {
-    @content;
-  }
-}
+@mixin content-padding-inline {
+  padding-inline: $content-padding-mobile;
 
-@mixin content-padding-in-line {
-  padding-inline: 20px;
-
-  @include on-tablet {
-    padding-inline: 72px;
+  @include respond($md) {
+    padding-inline: $content-padding-tablet;
   }
 
-  @include on-desktop {
-    max-width: 2565px;
-    padding-inline: 120px;
+  @include respond($xl) {
+    max-width: $content-max-width;
+    padding-inline: $content-padding-desktop;
+    margin-inline: auto;
   }
 }
 
 @mixin hover($property, $value) {
+  transition: #{$property} $effect-duration ease-in-out;
+
   &:hover {
     #{$property}: $value;
-    transition: #{$property} $effect-duration ease-in-out;
   }
 }

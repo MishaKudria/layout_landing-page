@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: space-between;
 
-  @include content-padding-in-line;
+  //@include content-padding-inline;
 
-  @include on-tablet {
+  @include respond($lg) {
     padding-block: 32px;
   }
 
@@ -18,4 +18,11 @@
     display: flex;
     gap: 24px;
   }
+}
+.top-bar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 32px;
+  padding-inline: 120px;
 }

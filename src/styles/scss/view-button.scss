@@ -30,7 +30,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .view {
     justify-content: center;
     padding-left: 20px;

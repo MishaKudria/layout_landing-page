@@ -5,7 +5,7 @@
     row-gap: 40px;
     width: 100%;
 
-    @include on-desktop {
+    @include respond($md) {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 24px;
     }

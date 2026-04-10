@@ -1,6 +1,6 @@
 .contact-us {
   padding: 80px 0;
-  font-family: Arial, sans-serif; /* Или твой основной шрифт */
+  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -16,10 +16,10 @@
   color: #1b2129;
 }
 
-/* Сетка: форма слева, контакты справа */
+
 .contact-content {
   display: flex;
-  gap: 100px; /* Расстояние между колонками */
+  gap: 100px;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -27,7 +27,7 @@
 /* Стили формы */
 .form {
   display: flex;
-  flex: 1; /* Занимает всё свободное место слева */
+  flex: 1;
   flex-direction: column;
   max-width: 550px;
 }
@@ -43,7 +43,7 @@
   font-size: 16px;
   color: #292929;
 
-  background-color: #f7f8fa; /* Светло-серый фон как на фото */
+  background-color: #f7f8fa;
   outline: none;
 }
 
@@ -53,7 +53,7 @@
 
 .form__input--textarea {
   resize: none;
-  min-height: 150px; /* Делаем поле сообщения выше */
+  min-height: 150px;
 }
 
 .form__button {
@@ -78,7 +78,7 @@
   background-color: #2c3541;
 }
 
-/* Стили контактов */
+
 .example {
   flex: 0 0 300px;
 }
@@ -99,14 +99,23 @@
   font-size: 18px;
   line-height: 1.5;
   color: #292929;
+
+
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
 }
 
-/* Адаптив для мобилок */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   .contact-content {
     flex-direction: column;
     gap: 50px;
   }
+
   .form,
   .example {
     flex: none;

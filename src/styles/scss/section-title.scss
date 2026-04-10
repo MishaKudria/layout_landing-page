@@ -8,12 +8,12 @@
   text-align: left;
   letter-spacing: -1.5px;
 
-  @include on-tablet {
+  @include respond($md) {
     margin-bottom: 64px;
     font-size: 40px;
   }
 
-  @include on-desktop {
+  @include respond($xl) {
     font-size: 48px;
   }
 

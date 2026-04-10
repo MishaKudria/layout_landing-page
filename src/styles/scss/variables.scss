@@ -1,4 +1,24 @@
-$tablet-min-width: 576px;
-$desktop-min-width: 1280px;
-$effectDuration: 0.3s;
+// $phone-max-width: 768px;
+// $desktop-min-width: 1280px;
+// $effectDuration: 0.3s;
+// $main-color: #292929;
+
+
+// 📱 Breakpoints (mobile-first)
+$sm: 640px; // smartphones
+$md: 768px; // smartphones and small tablets = or bigger than 768px
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+// 🎨 Colors
 $main-color: #292929;
+
+// ⏱ Animations
+$effect-duration: 0.3s;
+
+// 📐 Layout
+$content-max-width: 2560px;
+$content-padding-mobile: 20px;
+$content-padding-tablet: 72px;
+$content-padding-desktop: 120px;

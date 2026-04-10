@@ -23,7 +23,7 @@
     visibility: hidden;
     opacity: 0;
 
-    transition: opacity $effectDuration;
+    transition: opacity $effect-duration;
   }
 
   &__menu:target {
