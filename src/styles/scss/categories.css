@@ -12,7 +12,8 @@
   margin-bottom: 40px;
 }
 
-.categories__title, .categories__label {
+.categories__title,
+.categories__label {
   grid-column: 1/-1;
   margin: 0;
   font-size: 48px;
@@ -54,7 +55,7 @@
   max-width: 100%;
   height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {
@@ -84,7 +85,9 @@
   .categories .categories__link {
     min-height: 300px;
     padding: 40px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition:
+      background-color 0.3s ease,
+      transform 0.2s ease;
   }
   .categories .categories__link:hover {
     transform: translateY(-4px);

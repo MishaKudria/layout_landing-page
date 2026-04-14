@@ -261,7 +261,7 @@ section {
 }
 
 .menu .nav__link::after {
-  content: "";
+  content: '';
 
   position: absolute;
   bottom: -4px;
@@ -419,7 +419,7 @@ section {
   .recommended__products {
     grid-template-columns: repeat(3, 1fr);
     -moz-column-gap: 24px;
-         column-gap: 24px;
+    column-gap: 24px;
   }
 }
 
@@ -437,7 +437,8 @@ section {
   margin-bottom: 40px;
 }
 
-.categories__title, .categories__label {
+.categories__title,
+.categories__label {
   grid-column: 1/-1;
   margin: 0;
   font-size: 48px;
@@ -479,7 +480,7 @@ section {
   max-width: 100%;
   height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {
@@ -509,7 +510,9 @@ section {
   .categories .categories__link {
     min-height: 300px;
     padding: 40px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition:
+      background-color 0.3s ease,
+      transform 0.2s ease;
   }
   .categories .categories__link:hover {
     transform: translateY(-4px);
@@ -557,8 +560,6 @@ section {
   padding: 0 20px;
 }
 
-
-
 .contact-content {
   display: flex;
   gap: 100px;
@@ -592,7 +593,6 @@ section {
 .form__input::placeholder {
   color: #a0a0a0;
 }
-
 
 .form__input--textarea {
   resize: none;
@@ -675,7 +675,7 @@ section {
   height: 100%;
 
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center 75%;
-     object-position: center 75%;
+  object-position: center 75%;
 }

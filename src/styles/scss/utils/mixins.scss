@@ -1,5 +1,4 @@
-@use "sass:map"; // 1. Добавили подключение модуля
-
+@use 'sass:map'; // 1. Добавили подключение модуля
 
 @mixin screen($size) {
   $width: map.get($breakpoints, $size);

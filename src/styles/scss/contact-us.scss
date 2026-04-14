@@ -16,7 +16,6 @@
   color: #1b2129;
 }
 
-
 .contact-content {
   display: flex;
   gap: 100px;
@@ -78,7 +77,6 @@
   background-color: #2c3541;
 }
 
-
 .example {
   flex: 0 0 300px;
 }
@@ -101,15 +99,12 @@
   line-height: 1.5;
   color: #292929;
 
-
   transition: transform 0.2s ease;
 
   &:hover {
     transform: translateY(-3px);
   }
-
 }
-
 
 @media screen and (max-width: 768px) {
   .contact-content {
