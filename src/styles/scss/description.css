@@ -4,13 +4,15 @@
   gap: 111px;
   margin: 0 auto;
 }
+
 .description__title {
   margin: 0;
   font-size: 48px;
   line-height: 48px;
 }
+
 .description__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
-}/*# sourceMappingURL=description.css.map */
+}

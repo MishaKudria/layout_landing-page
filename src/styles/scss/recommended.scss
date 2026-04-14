@@ -1,13 +1,26 @@
 .recommended {
   &__products {
     display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 40px;
-    width: 100%;
 
-    @include respond($md) {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 24px;
+    // 📱 mobile
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px $phone-gutter;
+
+    padding: 0 $phone-margin;
+
+    // 📲 tablet+
+    @include screen(md) {
+      grid-template-columns: repeat(8, 1fr);
+      column-gap: $tablet-gutter;
+      padding: 0 $tablet-margin;
+    }
+
+    .product-item {
+      grid-column: span 1;
+
+      @include screen(md) {
+        grid-column: span 2;
+      }
     }
   }
 }

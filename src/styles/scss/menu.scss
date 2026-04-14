@@ -1,23 +1,24 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-
   font-weight: 700;
   background-color: #f9f9f9;
 
   &__nav_list {
     margin-bottom: 48px;
-    list-style: none;
     padding: 0;
+    list-style: none;
   }
 
   .nav__link {
-    display: inline-block;
     position: relative;
+
+    display: inline-block;
+
+    margin-bottom: 32px;
 
     font-size: 16px;
     color: $main-color;
-    margin-bottom: 32px;
     text-decoration: none;
 
     transition: all 0.25s ease; // плавность
@@ -29,16 +30,18 @@
 
     &::after {
       content: "";
+
       position: absolute;
-      left: 0;
       bottom: -4px;
+      left: 0;
+      transform-origin: left;
+      transform: scaleX(0);
 
       width: 100%;
       height: 2px;
+
       background-color: $main-color;
 
-      transform: scaleX(0);
-      transform-origin: left;
       transition: transform 0.25s ease;
     }
 
@@ -62,11 +65,11 @@
 
   &__phone-number {
     display: block;
+
     margin-bottom: 16px;
 
     font-size: 16px;
     line-height: 140%;
-   // padding-inline: 120px; // ⚠️ у тебя тут опечатка (ниже скажу)
     color: #1b2129;
     text-decoration: none;
     letter-spacing: 2px;

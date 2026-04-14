@@ -1,25 +1,44 @@
-@mixin respond($breakpoint) {
-  @media screen and (min-width: $breakpoint) {
-    @content;
+@use "sass:map"; // 1. Добавили подключение модуля
+
+
+@mixin screen($size) {
+  $width: map.get($breakpoints, $size);
+
+  @if $width {
+    @media (min-width: $width) {
+      @content;
+    }
   }
 }
 
-@mixin content-padding-inline {
-  padding-inline: $content-padding-mobile;
+@mixin container {
+  width: 100%;
+  max-width: $content-max-width;
+  margin-inline: auto;
+  padding-inline: $phone-margin;
 
-  @include respond($md) {
-    padding-inline: $content-padding-tablet;
-  }
-
-  @include respond($xl) {
-    max-width: $content-max-width;
-    padding-inline: $content-padding-desktop;
-    margin-inline: auto;
+  @include screen(md) {
+    padding-inline: $tablet-margin;
   }
 }
 
+// 🎯 Flex центр
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 🧩 Иконки
+@mixin icon($size) {
+  flex-shrink: 0;
+  width: $size;
+  height: $size;
+}
+
+// ✨ Hover
 @mixin hover($property, $value) {
-  transition: #{$property} $effect-duration ease-in-out;
+  transition: #{$property} $effect-duration ease;
 
   &:hover {
     #{$property}: $value;

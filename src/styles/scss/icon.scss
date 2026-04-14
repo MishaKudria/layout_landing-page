@@ -1,23 +1,28 @@
+
 .icon {
   display: inline-block;
-  width: 24px;
+
+  width: 24px; // Стандарт для планшета/десктопа
   height: 24px;
+
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
 
-  transition: transform 0.2s ease;
+  transition: transform $effect-duration ease;
 
   &:hover {
-    transform: translateY(-3px);
+    transform: scale(1.1);
   }
 
-  @include respond($md) {
-    width: 32px;
-    height: 32px;
+  // Адаптив для телефона (320px)
+  @include screen(md) {
+    width: 20px;
+    height: 20px;
   }
 
   &--phone {
-    background-image: url(../../images/icon/icons-phone.png.png);
+    background-image: url(../../images/icon/icon-close.png);
   }
 
   &--menu {
@@ -25,13 +30,6 @@
   }
 
   &--close {
-    background-image: url(../../images/icon/icon-close.png);
+    background-image: url(../../images/icon/icons-phone.png.png);
   }
-
-  &__icon--close:target {
-    pointer-events: auto;
-    visibility: visible;
-    opacity: 1;
-  }
-
 }
