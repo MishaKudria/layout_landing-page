@@ -1,18 +1,12 @@
 .description {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 111px;
-  margin: 0 auto;
+  grid-template-columns: 1fr;
+  gap: 32px;
 }
 
-.description__title {
-  margin: 0;
-  font-size: 48px;
-  line-height: 48px;
-}
-
-.description__text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 140%;
-}
+@media (min-width: 768px) {
+  .description {
+    grid-template-columns: 1fr 1fr;
+    gap: 111px;
+  }
+}/*# sourceMappingURL=description.css.map */

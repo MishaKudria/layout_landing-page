@@ -1,12 +1,11 @@
 .description {
-  @include container;
-
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
-
-  @include screen(md) {
-    grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+@media (min-width: 768px) {
+  .description {
+    grid-template-columns: 1fr 1fr;
     gap: 111px;
   }
 }
